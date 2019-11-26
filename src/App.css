@@ -1,22 +1,87 @@
-.App {
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 16px;
+  background: #333;
+  color: #fff;
   text-align: center;
+  font-size: 24px;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search__form {
+  background: beige;
+  padding: 30px 180px;
   display: flex;
+  justify-content: stretch;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.search__form div{
+  display: flex;
+  margin-bottom: 24px;
+}
+
+input {
+  padding: 8px;
+}
+
+input[type="search"] {
+  flex-grow: 4;
+}
+
+input[type="submit"] {
+  flex-grow: 1;
+  border-left: none;
+  border: 1px solid #333;
+  background: peru;
+  color: #fff;
+}
+
+.task-list {
+  padding: 48px 180px;
+  background: whitesmoke;
+}
+
+.task-item-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.task-item {
+  list-style: none;
+  margin-bottom: 12px;
+  display: flex;
+  font-size: 19px;
+  align-items: center;
+  width: 80%;
+}
+
+.task-item input {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.btn-delete {
+  color: #d9534f;
+  font-size: 14px;
+  border: 1px solid #d9534f;
+  padding: 8px 12px;
+  background: #fff;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.form-empty{
+  padding: 8px 12px;
+  display: inline-flex;
+  background: #d9534f;
+  color: #fff;
 }
